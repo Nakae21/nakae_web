@@ -1,0 +1,359 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  min-height: 100vh;
+  background-image: url(portfo_bg.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+nav{
+  background: #718ca0;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 800;
+
+}
+nav li{
+  height: 40px;
+  margin: 10px;
+}
+nav a{
+  height: 100%;
+  padding:0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: larger;
+}
+nav a:hover{
+  background-color: rgb(173, 190, 198);
+}
+nav li:first-child{
+  margin-right:auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.274);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+  }
+.sidebar a{
+  width: 100%;
+}
+.menu_button{
+  display: none;
+}
+
+#home{
+    text-align: center;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    position: relative;
+    width: 25px;
+    height: 100px;
+    border-radius: 600%;
+    margin-right: 20px;
+}
+
+.shape_img{
+    border-radius: 600px;
+    width: 25%;
+  }
+
+
+/* EDUCATION PGE STYLE*/
+
+.education {
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+.edu-bk-img {
+  position: relative;
+  background-image: url(edu-bk.jpeg);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.background-image img {
+  opacity: 0.3;
+}
+
+.cert-content {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 20px;
+  z-index: 1;
+}
+
+.cert-content h2,
+.cert-content h3 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.cert-content p {
+  margin: 5px 0;
+}
+
+/* Replace image paths with your actual file paths */
+.cert-content img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* CONTACT PGE*/
+.cont-style{
+    background-image: url(contact.jpg);
+}
+
+
+#social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-inline: 10px;
+  }
+  
+#social-icons a {
+    margin: -25px;
+  }
+  
+#social-icons img {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+    margin: -20px;
+    left: 90%;
+  }
+  
+  .contact-mail{
+    color: white;
+    margin-left: 20px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #contact-form {
+    color: white;
+    text-align: center;
+    font-size: larger;
+  }
+  #contact-form label{
+    
+    text-align: right;
+
+  }
+
+
+/*CERTIFICATION PAGE STYLE*/
+
+
+.cert_cv {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(216, 21, 21, 0.1);
+    text-align: center;
+}
+.cert_cv{
+  background-image: url(bk-cert.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+}
+.cert_cv .certificate {
+  margin-left: 10%;
+}
+
+#cv-id{
+  margin-left: 40%;
+}
+
+#cert-head {
+  font-style: oblique;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(20, 58, 198);
+  font-size: 80px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.certificate {
+    margin-bottom: 20px;
+}
+
+.certificate h2 {
+    margin: 5px 0;
+}
+
+.certificate p {
+    margin: 10px 0;
+    color: rgb(149, 94, 18);
+    margin-top: -5px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/*REFERENCE PAGE STYLE*/
+
+#reference-body {
+  background-image: url(ReferencesImage/refer-bk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.referrals {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.referrals h1 {
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  color: rgb(226, 230, 37);
+  font-size: 40px;
+}
+
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%; /* Adjust width as needed */
+}
+
+.person img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.person h2 {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.person p {
+  margin: 3px 0;
+  color: azure;
+}
+
+
+
+/* @mediaquery shows how the site will appear on different devices*/
+@media(max-width: 768px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu_button{
+    display: block;
+  }
+  #cert-head{
+    font-size: 50px;
+  }
+  #about-id{
+    margin-top: 40px;
+  }
+  .person {
+    width: 100%;
+  }
+  .education {
+    flex-direction: column;
+    height: auto;
+  }
+  .cert-content {
+    align-items: center;
+    text-align: center;
+  }
+ 
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%
+  }
+}
+
+  
+ 

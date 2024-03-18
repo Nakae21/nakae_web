@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="cont-style">
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="Certificates_cv.html">Certs & CV</a></li>
+            <li><a href="references.html">References</a></li> 
+          </ul>
+    
+         <ul>
+           <li><a href="index.html">NakaeTekq</a></li>
+           <li class="hideOnMobile"><a href="education.html">Education</a></li>
+           <li class="hideOnMobile"><a href="contacts.html">Contacts</a></li>
+           <li class="hideOnMobile"><a href="Certificates_cv.html">Certs & CV</a></li>
+           <li class="hideOnMobile"><a href="references.html">References</a></li> 
+           <li class="menu_button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+         </ul>
+       </nav>
+    
+    <form action="submit.php" method="post" id="contact-form">
+        <h2>Contact Me</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <main>
+        <section class="contact-mail"><br>
+            <p>Tel: +233 246115843 / +233 508780880</p>
+            <p>Location: TTU Main Campus</p>
+            <p>Email: nakaetekq@gmail.com</p><br>
+        </section>
+    </main>
+
+    
+
+
+    <footer class="contact-footer">
+        <!--Social Media Icons Code-->
+    <div id="social-icons">
+        
+        <a href="https://www.facebook.com/nakaetekq" target="_blank"><img src="facebook.avif" alt="Facebook"></a>
+        <a href="https://www.x.com/NakaeTekq" target="_blank"><img src="x.png" alt="X"></a>
+        <a href="https://www.instagram.com/nakae_tech" target="_blank"><img src="instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/nicholas-a-e-aboagye" target="_blank"><img src="linkedin.webp" alt="LinkedIn"></a>
+        <a href="https://t.me/IT_Forest_Inc" target="_blank"><img src="telegram.jpg" alt="Telegram"></a>
+        <a href="https://www.youtube.com/NAKAETekq" target="_blank>"><img src="youtube.png" alt="youtube"></a>
+    </div>
+        <p>&copy; 2024 nakaetekq</p>
+        
+    </footer>
+
+
+     <!--Java query to show and hide the sidebar-->
+     <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

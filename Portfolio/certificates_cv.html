@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="cert-body">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="Certificates_cv.html">Certs & CV</a></li>
+            <li><a href="references.html">References</a></li> 
+          </ul>
+    
+         <ul>
+           <li><a href="index.html">NakaeTekq</a></li>
+           <li class="hideOnMobile"><a href="education.html">Education</a></li>
+           <li class="hideOnMobile"><a href="contacts.html">Contacts</a></li>
+           <li class="hideOnMobile"><a href="Certificates_cv.html">Certs & CV</a></li>
+           <li class="hideOnMobile"><a href="references.html">References</a></li> 
+           <li class="menu_button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+         </ul>
+       </nav>
+
+
+<!--My Certificaations from Senior High to Date-->
+       <div class="cert_cv">
+        <h1 id="cert-head">My Certificates</h1><br>
+
+        <div class="certificate">
+            <h2>MICROSOFT</h2>
+            <p>Microsoft Azure Certificate</p>
+            <a href="Certs/Microsoft/" download class="button">Download</a>
+        </div>
+
+        <div class="certificate">
+            <h2>IPMC</h2>
+            <p>IPMC College of Technology Certificates</p>
+            <a href="Certs/IPMC/" download class="button">Download</a>
+        </div>
+
+        <div class="certificate">
+            <h2>COUSERA</h2>
+            <p>Cousera Online Traing Platform Certificates</p>
+            <a href="Certs/Coursera/" download class="button">Download</a>
+        </div>
+
+        <div class="certificate">
+            <h2>CISCO</h2>
+            <p>Cisco SkillUp Training Certificates</p>
+            <a href="Certs/Cisco/" download class="button">Download</a>
+        </div>
+
+        <div class="certificate">
+            <h2>uComputing</h2>
+            <p>uComputing IT Training Certificates</p>
+            <a href="Certs/uComputing/" download class="button">Download</a>
+        </div>
+
+        <div class="certificate">
+            <h2>SENIOR HIGH</h2>
+            <p>Senior High School Certificate</p>
+            <a href="Certs/High_School/" download class="button">Download</a>
+        </div>
+
+        <div class="certificate">
+            <h2>WIKIPEDIA</h2>
+            <p>Wikipedia Editor/Translator Training Certificate</p>
+            <a href="Certs/Wikipedia/" download class="button">Download</a>
+        </div><br>
+
+        <div class="certificate">
+            <h2>LICENSE</h2>
+            <p>Government of Ghana Driving License</p>
+            <a href="Certs/Drivers License/" download class="button">Download</a>
+        </div>
+    
+        <h1 id="cv-id">My Resume / C.V</h1>
+        <a style="margin-left: 45%;" id="cv-id" href="Certs/NicholasCV.pdf" download class="button">Click >> Resume</a>
+    </div>
+
+    
+
+<!--Java query to show and hide the sidebar-->
+     <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
